@@ -1,3 +1,4 @@
+"use client";
 import RestaurantCard from "@/components/shared/RestaurantCard";
 import {
   Carousel,
@@ -6,15 +7,16 @@ import {
 } from "@/components/ui/carousel";
 import { restaurantData } from "@/utils/restaurant-data";
 
-import { div } from "framer-motion/client";
+import Autoplay from "embla-carousel-autoplay";
 import { ChevronRight } from "lucide-react";
+import Link from "next/link";
 
 const TopRestaurant = () => {
   return (
     <div>
-      <div className="flex-between">
+      <div className="flex-between flex-col md:flex-row">
         <div className="space-y-2">
-          <h1 className="md:text-4xl text-xl font-semibold truncate">
+          <h1 className="section-title">
             Explore{" "}
             <span className="text-primary-color"> Top Restaurants </span>
           </h1>
@@ -23,27 +25,38 @@ const TopRestaurant = () => {
           </p>
         </div>
         <div>
-          <p className="text-primary-black hover:text-light-gray flex-center group cursor-pointer overflow-hidden text-xl truncate">
-            see all
-            <ChevronRight
-              size={24}
-              color="#9A9CAA"
-              className="group-hover:translate-x-10 overflow-hidden duration-700"
-            />
-          </p>
+          <Link href="/all-restaurants">
+            <p className="text-primary-black hover:text-light-gray flex-center group cursor-pointer overflow-hidden text-xl truncate">
+              see all
+              <ChevronRight
+                size={24}
+                color="#9A9CAA"
+                className="group-hover:translate-x-10 overflow-hidden duration-700"
+              />
+            </p>
+          </Link>
         </div>
       </div>
       {/* top restaurants carousel */}
       <Carousel
         opts={{
+          loop: true,
+          duration: 55,
           align: "start",
         }}
+        plugins={[
+          Autoplay({
+            delay: 3500,
+            stopOnInteraction: false,
+            stopOnMouseEnter: true,
+          }),
+        ]}
         className="w-full mt-8"
       >
         <CarouselContent>
-          {restaurantData?.map((restaurant, index) => (
+          {restaurantData?.slice(0, 8)?.map((restaurant) => (
             <CarouselItem
-              key={index}
+              key={restaurant._id}
               className="md:basis-1/2 xl:basis-1/3 2xl:basis-1/4"
             >
               <div className="p-1">

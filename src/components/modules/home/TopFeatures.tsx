@@ -8,7 +8,7 @@ const TopFeatures = () => {
   return (
     <div
       className="bg-[#fff] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 lg:px-16 px-8 py-8 items-center justify-between  rounded gap-5 XL:gap-x-10 max-w-7xl mx-auto"
-      style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
+      style={{ boxShadow: "2px 4px 4px 2px rgba(0, 0, 0, 0.25)" }}
     >
       <div className="flex items-center gap-x-5 ">
         <Image src={boxIcon} alt="discount_icons"></Image>

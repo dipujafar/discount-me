@@ -64,7 +64,7 @@ const Navbar = () => {
               <Input
                 type="text"
                 placeholder={"Search...."}
-                className="w-full min-w-[200px] rounded-full pl-10"
+                className="w-full min-w-[250px] rounded-full pl-10"
               />
               <Search
                 className="absolute left-4 border-none font-light"

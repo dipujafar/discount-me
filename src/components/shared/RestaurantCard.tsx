@@ -3,11 +3,10 @@ import { Button } from "../ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
 import { TRestaurant } from "@/types";
 import star from "@/assets/icons/Star.png";
-import Link from "next/link";
 import { MapPin } from "lucide-react";
 const RestaurantCard = ({ data }: { data: TRestaurant }) => {
   return (
-    <Card className="border-light-gray">
+    <Card className="border-light-gray max-w-[320px] md:max-w-[400px]  lg:max-w-[450px]">
       <CardHeader className="px-4 py-3">
         <Image
           src={data?.image}
@@ -25,7 +24,9 @@ const RestaurantCard = ({ data }: { data: TRestaurant }) => {
           </h1>
           <div className="flex items-center gap-x-2">
             <Image src={star} alt="restaurant_image" className="size-6"></Image>
-            <span className="text-primary-black/80">({data?.rating})</span>
+            <span className="text-primary-black/80 font-medium">
+              ({data?.rating})
+            </span>
           </div>
         </div>
         <p className="flex  gap-x-1">

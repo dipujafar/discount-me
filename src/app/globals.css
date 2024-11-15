@@ -78,4 +78,26 @@ body {
   .flex-between {
     @apply flex justify-between items-center;
   }
+  .section {
+    @apply md:py-10 py-6;
+  }
+  .section-title {
+    @apply md:text-4xl text-xl font-semibold truncate;
+  }
+}
+
+/* react pagination bar styles */
+.rpb-item {
+  border: 1px solid lightgray !important;
+  border-radius: 16px !important;
+}
+
+.rpb-item:hover {
+  border: 1px solid #33c06c !important;
+  border-radius: 16px !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.rpb-item--active {
+  background-color: #ff7d29 !important;
 }
