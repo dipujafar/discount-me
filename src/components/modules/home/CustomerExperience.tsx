@@ -21,7 +21,7 @@ const CustomerExperience = () => {
           <PulseShadow>
             <Image src={icon1} alt="icon"></Image>
           </PulseShadow>
-          <p className="font-medium text-primary-black">Original Products"</p>
+          <p className="font-medium text-primary-black">Original Products</p>
         </div>
 
         <div className="space-y-3">
@@ -29,22 +29,20 @@ const CustomerExperience = () => {
             <Image src={icon2} alt="icon"></Image>
           </PulseShadow>
           <p className="font-medium text-primary-black">
-            Satisfaction Guarantee"
+            Satisfaction Guarantee
           </p>
         </div>
         <div className="space-y-3">
           <PulseShadow>
             <Image src={icon3} alt="icon"></Image>
           </PulseShadow>
-          <p className="font-medium text-primary-black">
-            New Arrival Everyday"
-          </p>
+          <p className="font-medium text-primary-black">New Arrival Everyday</p>
         </div>
         <div className="space-y-3">
           <PulseShadow>
             <Image src={icon4} alt="icon"></Image>
           </PulseShadow>
-          <p className="font-medium text-primary-black"> Fast Shipping"</p>
+          <p className="font-medium text-primary-black"> Fast Shipping</p>
         </div>
       </div>
     </div>

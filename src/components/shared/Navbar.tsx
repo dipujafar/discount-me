@@ -6,7 +6,6 @@ import { Input } from "../ui/input";
 
 import {
   ChevronDown,
-  Heart,
   Search,
   ShoppingCart,
   TableOfContents,
