@@ -4,12 +4,13 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
+import { TCategory } from "@/types";
 import { categoryData } from "@/utils/category-data";
 
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 
-const MenuCategories = () => {
+const MenuCategories = ({ data }: { data: TCategory[] }) => {
   return (
     <Carousel
       opts={{
@@ -27,7 +28,7 @@ const MenuCategories = () => {
       className="w-full mt-8 "
     >
       <CarouselContent>
-        {categoryData?.map((category) => (
+        {data?.map((category) => (
           <CarouselItem
             key={category._id}
             className="basis-1/4 md:basis-1/6 xl:basis-1/12 py-2"

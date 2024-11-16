@@ -14,3 +14,9 @@ export type TMenu = {
   description: string;
   price: number;
 };
+
+export type TCategory = {
+  _id: number;
+  name: string;
+  image: string;
+};

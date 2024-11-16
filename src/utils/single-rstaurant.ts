@@ -1,12 +1,12 @@
 export const restaurant = {
-  name: "Gourmet Delight",
+  name: "Villagio Restaurant & Bar ",
   images: [
     "/single-restaurant.jpg",
-    "/single-restaurant.jpg",
-    "/single-restaurant.jpg",
+    "/single-restaurant2.jpg",
+    "/single-restaurant3.jpg",
   ],
   location: "123 Culinary Ave, Paris, France",
-  rating: 4.7,
+  rating: 3.7,
   description:
-    "A fine dining experience offering exquisite French cuisine in an elegant atmosphere.",
+    "Villagio restaurant and bar has one mission: to provide guests with a fine and fresh seafood experience. Featuring seasonal and sustainable seafood that is flown in fresh daily, our chef-driven menu proves that no matter when you’re dining, seafood can be truly exceptional. to provide guests with a fine ",
 };

@@ -1,6 +1,7 @@
 "use client";
 import MenuCard from "@/components/shared/MenuCard";
 import MenuCategories from "@/components/shared/MenuCategories";
+import { categoryData } from "@/utils/category-data";
 import { menuData } from "@/utils/manu-data";
 import { useState } from "react";
 import { Pagination } from "react-pagination-bar";
@@ -10,7 +11,7 @@ const MenuItemsContainers = () => {
   const pagePostsLimit = 6;
   return (
     <div>
-      <MenuCategories></MenuCategories>
+      <MenuCategories data={categoryData}></MenuCategories>
 
       {/* _____________________ All Restaurants  _____________________ */}
 

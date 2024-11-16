@@ -5,6 +5,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 import Image from "next/image";
 
@@ -15,7 +16,20 @@ export default function RestaurantImageSlider({
 }) {
   return (
     <div>
-      <Carousel>
+      <Carousel
+        opts={{
+          loop: true,
+          duration: 80,
+          align: "start",
+        }}
+        plugins={[
+          Autoplay({
+            delay: 4000,
+            stopOnInteraction: false,
+            stopOnMouseEnter: true,
+          }),
+        ]}
+      >
         <CarouselContent>
           {images ? (
             images?.map((image, index) => (
@@ -25,7 +39,7 @@ export default function RestaurantImageSlider({
                   width={800}
                   src={image}
                   alt="picture of the restaurant"
-                  className="mx-auto block h-full max-h-[400px] w-full"
+                  className="mx-auto block  lg:h-[400px] xl:h-[500px] md:h-[300px] h-[200px]  w-full"
                 />
               </CarouselItem>
             ))
@@ -35,8 +49,8 @@ export default function RestaurantImageSlider({
             </CarouselItem>
           )}
         </CarouselContent>
-        <CarouselPrevious className="bg-primary-green text-primary-white" />
-        <CarouselNext className="bg-primary-green text-primary-white" />
+        <CarouselPrevious className="bg-primary-green text-primary-white hidden lg:flex shadow-2xl size-10 translate-x-5" />
+        <CarouselNext className="bg-primary-green text-primary-white  hidden lg:flex  shadow-2xl size-10 -translate-x-5" />
       </Carousel>
     </div>
   );
