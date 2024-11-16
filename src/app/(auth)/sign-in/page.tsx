@@ -1,6 +1,7 @@
 import React from "react";
 import SignInForm from "./_components/SignInForm";
 import { Metadata } from "next";
+import Container from "@/components/ui/container";
 
 export const metadata: Metadata = {
   title: "Sign In",
@@ -9,9 +10,9 @@ export const metadata: Metadata = {
 
 const SignInPage = () => {
   return (
-    <div>
+    <Container className="flex-center min-h-[calc(100vh-200px)]">
       <SignInForm></SignInForm>
-    </div>
+    </Container>
   );
 };
 

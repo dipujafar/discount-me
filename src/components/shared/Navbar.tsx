@@ -132,7 +132,7 @@ const Navbar = () => {
 
               <ShoppingCart />
             </Link>
-            <Link href={"/user/profile"}>
+            <Link href={"/sign-in"}>
               <User></User>
             </Link>
           </div>
