@@ -20,8 +20,10 @@ const Hero = () => {
           <Image src={heroImage} alt="hero_image"></Image>
         </MovementElement>
       </div>
-      <div className="absolute xl:-top-10 2xl:top-0 lg:-top-10 md:-top-6 top-10 left-1/4">
-        <Image src={line} alt="a_line"></Image>
+      <div className="absolute xl:-top-10 2xl:top-0 lg:-top-10 md:-top-6 top-10 left-1/4 overflow-hidden">
+        <MovementElement duration={1} x={"20%"}>
+          <Image src={line} alt="a_line"></Image>
+        </MovementElement>
       </div>
     </div>
   );

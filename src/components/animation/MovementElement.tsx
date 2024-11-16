@@ -26,6 +26,7 @@ const MovementElement = ({
       whileInView={{ opacity: 1, x: 0, y: 0 }}
       exit={{ opacity: 0, x: x, y: y }}
       transition={{ duration: duration, delay: delay, ease: "easeIn" }}
+      viewport={{ once: true }}
       className={cn(className)}
     >
       {children}

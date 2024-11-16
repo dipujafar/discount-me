@@ -4,7 +4,7 @@ import SingleRestaurantContainer from "./_components/SingleRestaurantContainer";
 
 const SIngleRestaurant = () => {
   return (
-    <Container>
+    <Container className="page-padding">
       <SingleRestaurantContainer></SingleRestaurantContainer>
     </Container>
   );
