@@ -6,7 +6,7 @@ import star from "@/assets/icons/Star.png";
 import { MapPin } from "lucide-react";
 const RestaurantCard = ({ data }: { data: TRestaurant }) => {
   return (
-    <Card className="border-light-gray max-w-[320px] md:max-w-[400px]  lg:max-w-[450px]">
+    <Card className="border-light-gray max-w-[320px] md:max-w-[400px]  lg:max-w-[450px] hover:shadow-2xl ">
       <CardHeader className="px-4 py-3">
         <Image
           src={data?.image}

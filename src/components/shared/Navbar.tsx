@@ -84,19 +84,19 @@ const Navbar = () => {
                   <Menubar className="w-fit border-none bg-transparent shadow-none">
                     <MenubarMenu>
                       <MenubarTrigger className="truncate text-light-black duration-500 hover:bg-primary-color hover:text-white">
-                        All Category
+                        All Items
                         <ChevronDown className="ml-3" size={20} />
                       </MenubarTrigger>
                       <MenubarContent>
-                        <Link href={`/menus`}>
+                        <Link href={`/menu-items`}>
                           <MenubarItem className="max-w-[180px]">
-                            All Categories
+                            All Items
                           </MenubarItem>
                         </Link>
                         <hr />
                         {categoriesData?.map((category, idx: number) => (
                           <div key={idx}>
-                            <Link href={`/menus`}>
+                            <Link href={`/menu-items`}>
                               <MenubarItem className="max-w-[180px]">
                                 {category}
                               </MenubarItem>
@@ -187,22 +187,22 @@ const Navbar = () => {
                             className="rounded px-2 hover:bg-primary-color hover:text-white"
                           >
                             <div className="flex cursor-pointer items-center">
-                              All Categories
+                              All Items
                               <ChevronDown className="ml-2" size={20} />{" "}
                             </div>
                           </DropdownMenuTrigger>
                           <DropdownMenuContent className="mx-auto w-56">
                             <DropdownMenuGroup>
-                              <Link href={`/menus`}>
+                              <Link href={`/menu-items`}>
                                 <DropdownMenuItem>
-                                  All Categories
+                                  Categories Items
                                 </DropdownMenuItem>
                               </Link>
 
                               <hr />
                               {categoriesData?.map((category, idx: number) => (
                                 <div key={idx}>
-                                  <Link href={`/menus}`}>
+                                  <Link href={`/menu-items}`}>
                                     <DropdownMenuItem className="max-w-[180px]">
                                       {category}
                                     </DropdownMenuItem>

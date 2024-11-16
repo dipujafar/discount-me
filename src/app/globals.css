@@ -78,7 +78,7 @@ body {
   .flex-between {
     @apply flex justify-between items-center;
   }
-  .section {
+  .page-padding {
     @apply md:py-10 py-6;
   }
   .section-title {
@@ -94,6 +94,7 @@ body {
 
 .rpb-item:hover {
   border: 1px solid #33c06c !important;
+  box-shadow: 1px 1px 1px 1px #f1c09c;
   border-radius: 16px !important;
   transition: all 0.2s ease-in-out;
 }

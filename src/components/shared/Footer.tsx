@@ -8,13 +8,7 @@ import appStore from "@/assets/image/app_store.png";
 import Link from "next/link";
 import Container from "../ui/container";
 
-/*************  ✨ Codeium Command ⭐  *************/
-/**
- * Footer component for the Ecommerce Next.js Boilerplate
- *
- * @returns A JSX element representing the Footer component
- */
-/******  7006188e-6b7e-4b87-95dc-b7fb14903c5d  *******/ const Footer = () => {
+const Footer = () => {
   return (
     <div className="bg-primary-black py-16">
       <Container>
@@ -24,9 +18,9 @@ import Container from "../ui/container";
             <Image
               src={logo}
               alt="logo"
-              width={106}
-              height={61}
-              className="h-[61px] w-[106px]"
+              width={1200}
+              height={1200}
+              className="w-auto h-auto"
             />
             <p className="mt-4 max-w-[320px] text-primary-white/70">
               Ecommerce is a free UI Kit from Paperpillar that you can use for

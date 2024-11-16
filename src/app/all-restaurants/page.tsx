@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const AllRestaurantsPage = () => {
   return (
-    <Container className="section">
+    <Container className="page-padding">
       <AllRestaurantsContainer></AllRestaurantsContainer>
     </Container>
   );
