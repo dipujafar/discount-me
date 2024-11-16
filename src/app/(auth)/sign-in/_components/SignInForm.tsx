@@ -71,31 +71,34 @@ const SignInForm = () => {
               </div>
 
               {/* Input password with eye icon to toggle visibility */}
-              <div className="relative flex flex-col space-y-1.5">
-                <Input
-                  id="password"
-                  placeholder={"Password"}
-                  type={showPassword ? "text" : "password"}
-                  {...register("password", {
-                    required: "Password is required",
-                  })}
-                />
+              <div>
+                <div className="relative flex flex-col space-y-1.5">
+                  <Input
+                    id="password"
+                    placeholder={"Password"}
+                    type={showPassword ? "text" : "password"}
+                    {...register("password", {
+                      required: "Password is required",
+                    })}
+                  />
+
+                  {/* Eye icon to toggle password visibility */}
+                  <div
+                    className="absolute right-3 top-1/3 -translate-y-1/2 transform cursor-pointer"
+                    onClick={() => setShowPassword(!showPassword)}
+                  >
+                    {showPassword ? (
+                      <Eye color="#424040" />
+                    ) : (
+                      <EyeOff color="#424040" />
+                    )}
+                  </div>
+                </div>
                 {errors.password && (
-                  <p className="text-sm text-red-500">
+                  <p className="text-sm text-red-500 mt-2">
                     {errors.password.message}
                   </p>
                 )}
-                {/* Eye icon to toggle password visibility */}
-                <div
-                  className="absolute right-3 top-1/3 -translate-y-1/2 transform cursor-pointer"
-                  onClick={() => setShowPassword(!showPassword)}
-                >
-                  {showPassword ? (
-                    <Eye color="#424040" />
-                  ) : (
-                    <EyeOff color="#424040" />
-                  )}
-                </div>
               </div>
 
               {/* Remember me and forget password section */}
