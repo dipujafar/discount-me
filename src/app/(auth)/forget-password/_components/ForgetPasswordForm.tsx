@@ -22,6 +22,7 @@ const ForgetPasswordFrom = () => {
 
   const onSubmit = async (data: FormData) => {
     console.log(data);
+    router.push("/verify-otp");
   };
 
   return (

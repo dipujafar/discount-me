@@ -23,16 +23,18 @@ const SetNewPasswordFrom = () => {
     register,
     handleSubmit,
     formState: { errors },
+    watch,
   } = useForm<FormData>();
   const onSubmit = async (data: FormData) => {
     console.log(data);
+    router.push("/sign-in");
   };
 
   return (
     <MovementElement duration={0.8}>
       <Card className="xl:w-[650px] md:w-[500px] shadow-md hover:shadow-xl">
         <CardHeader>
-          <CardTitle className="text-center text-4xl font-semibold">
+          <CardTitle className="text-center md:text-4xl font-semibold text-2xl">
             Set New Password
           </CardTitle>
         </CardHeader>
@@ -85,6 +87,11 @@ const SetNewPasswordFrom = () => {
                   type={showPassword ? "text" : "password"}
                   {...register("confirmPassword", {
                     required: "Confirm Password is required",
+                    validate: (value) => {
+                      if (value !== watch("newPassword")) {
+                        return "Passwords do not match";
+                      }
+                    },
                   })}
                 />
 
@@ -108,7 +115,7 @@ const SetNewPasswordFrom = () => {
 
               {/* Login button */}
               <Button type="submit" className="rounded-full bg-primary-color">
-                Submit"
+                Submit
               </Button>
             </div>
           </form>
