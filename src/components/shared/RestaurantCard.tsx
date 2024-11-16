@@ -4,9 +4,10 @@ import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
 import { TRestaurant } from "@/types";
 import star from "@/assets/icons/Star.png";
 import { MapPin } from "lucide-react";
+import Link from "next/link";
 const RestaurantCard = ({ data }: { data: TRestaurant }) => {
   return (
-    <Card className="border-light-gray max-w-[320px] md:max-w-[400px]  lg:max-w-[450px] hover:shadow-2xl ">
+    <Card className="border-light-gray max-w-[320px] md:max-w-[400px]  lg:max-w-[450px] hover:shadow-2xl duration-100 ease-in ">
       <CardHeader className="px-4 py-3">
         <Image
           src={data?.image}
@@ -40,9 +41,11 @@ const RestaurantCard = ({ data }: { data: TRestaurant }) => {
         </p>
       </CardContent>
       <CardFooter className="px-4 py-3">
-        <Button className="w-full bg-primary-green hover:bg-primary-green/80 group">
-          <span className="group-hover:animate-ping">Visit</span>
-        </Button>
+        <Link href={`/all-restaurants/${data?._id}`} className="w-full">
+          <Button className="w-full bg-primary-green hover:bg-primary-green/80 group">
+            <span className="group-hover:animate-ping">Visit</span>
+          </Button>
+        </Link>
       </CardFooter>
     </Card>
   );

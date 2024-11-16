@@ -1,5 +1,4 @@
 "use client";
-import RestaurantCard from "@/components/shared/RestaurantCard";
 import {
   Carousel,
   CarouselContent,
@@ -20,18 +19,18 @@ const MenuCategories = () => {
       }}
       plugins={[
         Autoplay({
-          delay: 2500,
+          delay: 2000,
           stopOnInteraction: false,
           stopOnMouseEnter: true,
         }),
       ]}
-      className="w-full mt-8"
+      className="w-full mt-8 "
     >
       <CarouselContent>
         {categoryData?.map((category) => (
           <CarouselItem
             key={category._id}
-            className="basis-1/4 md:basis-1/6 xl:basis-1/12 "
+            className="basis-1/4 md:basis-1/6 xl:basis-1/12 py-2"
           >
             <div
               className=" flex-center flex-col cursor-pointer bg-[#FDFDFD] rounded-xl hover:shadow-2xl hover:bg-gray-200 duration-300 ease-in"
