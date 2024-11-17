@@ -18,14 +18,14 @@ const CustomerExperience = () => {
       </p>
       <div className="flex flex-grow justify-between">
         <div className="space-y-3">
-          <PulseShadow>
+          <PulseShadow color="#6bbe8c">
             <Image src={icon1} alt="icon"></Image>
           </PulseShadow>
           <p className="font-medium text-primary-black">Original Products</p>
         </div>
 
         <div className="space-y-3">
-          <PulseShadow>
+          <PulseShadow color="#6bbe8c">
             <Image src={icon2} alt="icon"></Image>
           </PulseShadow>
           <p className="font-medium text-primary-black">
@@ -33,13 +33,13 @@ const CustomerExperience = () => {
           </p>
         </div>
         <div className="space-y-3">
-          <PulseShadow>
+          <PulseShadow color="#6bbe8c">
             <Image src={icon3} alt="icon"></Image>
           </PulseShadow>
           <p className="font-medium text-primary-black">New Arrival Everyday</p>
         </div>
         <div className="space-y-3">
-          <PulseShadow>
+          <PulseShadow color="#6bbe8c">
             <Image src={icon4} alt="icon"></Image>
           </PulseShadow>
           <p className="font-medium text-primary-black"> Fast Shipping</p>

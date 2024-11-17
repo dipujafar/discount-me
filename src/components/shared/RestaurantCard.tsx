@@ -7,7 +7,7 @@ import { MapPin } from "lucide-react";
 import Link from "next/link";
 const RestaurantCard = ({ data }: { data: TRestaurant }) => {
   return (
-    <Card className="border-light-gray max-w-[320px] md:max-w-[400px]  lg:max-w-[450px] hover:shadow-2xl duration-100 ease-in ">
+    <Card className="border-light-gray max-w-[320px] md:max-w-[400px]  lg:max-w-[450px] hover:shadow-2xl hover:border-2 duration-100 ease-in ">
       <CardHeader className="px-4 py-3">
         <Image
           src={data?.image}

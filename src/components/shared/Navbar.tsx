@@ -35,6 +35,8 @@ import {
 } from "@/components/ui/dropdown-menu";
 import Container from "../ui/container";
 import Link from "next/link";
+import "./navbar.css";
+import PulseShadow from "../animation/PulseShadow";
 
 const categoriesData = ["Dessert", "Noodles", "Rice"];
 
@@ -71,7 +73,7 @@ const Navbar = () => {
               />
               <Button
                 type="submit"
-                className="absolute right-0 rounded-l-none rounded-r-full bg-primary-color"
+                className="absolute right-0 rounded-l-none rounded-r-full bg-primary-color hover:bg-primary-black/80"
               >
                 Search
               </Button>
@@ -83,7 +85,7 @@ const Navbar = () => {
                 <li>
                   <Menubar className="w-fit border-none bg-transparent shadow-none">
                     <MenubarMenu>
-                      <MenubarTrigger className="truncate text-light-black duration-500 hover:bg-primary-color hover:text-white">
+                      <MenubarTrigger className="truncate text-light-black duration-500 btn-shine hover:text-white">
                         All Items
                         <ChevronDown className="ml-3" size={20} />
                       </MenubarTrigger>
@@ -109,13 +111,13 @@ const Navbar = () => {
                   </Menubar>
                 </li>
 
-                <li className="duration-100 hover:text-primary-color">
-                  <Link href="/coupon" className="truncate">
+                <li className="duration-100 ">
+                  <Link href="/coupon" className="truncate btn-shine">
                     Coupon
                   </Link>
                 </li>
-                <li className="duration-100 hover:text-primary-color">
-                  <Link href="/support" className="truncate">
+                <li className="duration-100 ">
+                  <Link href="/support" className="truncate  btn-shine">
                     Support
                   </Link>
                 </li>
@@ -126,9 +128,11 @@ const Navbar = () => {
           {/* nav icons */}
           <div className="hidden items-center gap-3 xl:flex">
             <Link href={"/shopping-cart"} className="relative">
-              <span className="absolute -right-1 -top-2 flex size-5 items-center justify-center rounded-full bg-primary-color p-1 text-white">
-                {5}
-              </span>
+              <PulseShadow color="#e68c50">
+                <span className="absolute -right-1 -top-2 flex size-5 items-center justify-center rounded-full bg-primary-color p-1 text-white">
+                  {5}
+                </span>
+              </PulseShadow>
 
               <ShoppingCart />
             </Link>
@@ -184,9 +188,9 @@ const Navbar = () => {
                         <DropdownMenu>
                           <DropdownMenuTrigger
                             asChild
-                            className="rounded px-2 hover:bg-primary-color hover:text-white"
+                            className="rounded px-2  "
                           >
-                            <div className="flex cursor-pointer items-center">
+                            <div className="flex cursor-pointer items-center btn-shine">
                               All Items
                               <ChevronDown className="ml-2" size={20} />{" "}
                             </div>
@@ -214,11 +218,16 @@ const Navbar = () => {
                           </DropdownMenuContent>
                         </DropdownMenu>
                       </li>
-                      <li className="duration-100 hover:text-primary-color">
-                        <Link href="/coupon"> Coupon</Link>
+                      <li className="duration-100 ">
+                        <Link href="/coupon" className="btn-shine">
+                          {" "}
+                          Coupon
+                        </Link>
                       </li>
-                      <li className="duration-100 hover:text-primary-color">
-                        <Link href="/support">support</Link>
+                      <li className="duration-100">
+                        <Link href="/support" className="btn-shine">
+                          support
+                        </Link>
                       </li>
                     </ul>
                   </nav>
