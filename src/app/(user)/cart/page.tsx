@@ -13,7 +13,7 @@ const CartPage = () => {
       <h1 className="text-primary-black lg:text-4xl text-2xl font-bold">
         My Shopping Cart
       </h1>
-      <CartContainer></CartContainer>
+      <CartContainer />
     </Container>
   );
 };

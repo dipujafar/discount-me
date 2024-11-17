@@ -1,5 +1,6 @@
 import React from "react";
 import CouponContainer from "./_components/CouponContainer";
+import Container from "@/components/ui/container";
 
 export const metadata = {
   title: "Coupon",
@@ -8,9 +9,12 @@ export const metadata = {
 
 const CouponPage = () => {
   return (
-    <div>
+    <Container className="page-padding ">
+      <h1 className="text-primary-black lg:text-4xl text-2xl font-bold">
+        Coupon Cards
+      </h1>
       <CouponContainer></CouponContainer>
-    </div>
+    </Container>
   );
 };
 
