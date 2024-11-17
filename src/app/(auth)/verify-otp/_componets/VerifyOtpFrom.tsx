@@ -23,10 +23,7 @@ const VerifyOtpForm = () => {
 
   const router = useRouter();
 
-  const {
-    handleSubmit,
-    formState: { errors },
-  } = useForm<FormData>();
+  const { handleSubmit } = useForm<FormData>();
 
   const onSubmit = async () => {
     console.log(otp);

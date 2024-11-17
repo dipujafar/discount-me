@@ -138,7 +138,7 @@ const SignInForm = () => {
 
         {/* Footer with link to register */}
         <CardFooter className="flex justify-center gap-1">
-          <p className="text-secondary-gray">Don't have an account</p>
+          <p className="text-secondary-gray">Don&apos;t have an account</p>
           <Link href={"/sign-up"}>
             <span className="text-lg font-medium"> Register</span>
           </Link>

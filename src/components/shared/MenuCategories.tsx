@@ -5,7 +5,6 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import { TCategory } from "@/types";
-import { categoryData } from "@/utils/category-data";
 
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";

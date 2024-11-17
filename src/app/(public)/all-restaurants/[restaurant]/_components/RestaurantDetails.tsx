@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 
-import { AlignJustify, Warehouse } from "lucide-react";
+import { AlignJustify } from "lucide-react";
 import { restaurant } from "@/utils/single-rstaurant";
 import RestaurantImageSlider from "./RestaurantImageSlider";
 import {

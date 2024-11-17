@@ -26,7 +26,7 @@ export default function RestaurantImageSlider({
           Autoplay({
             delay: 4000,
             stopOnInteraction: false,
-            stopOnMouseEnter: true,
+            stopOnMouseEnter: false,
           }),
         ]}
       >
