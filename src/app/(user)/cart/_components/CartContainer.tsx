@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -21,6 +20,8 @@ import {
 import { ArrowLeft, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+
 import { useState } from "react";
 
 const productData = [
@@ -43,6 +44,7 @@ const CartContainer = () => {
   const [quantities, setQuantities] = useState(
     productData.map((product) => product.quantity)
   );
+  const router = useRouter();
 
   const handleQuantityChange = (idx: number, change: number) => {
     setQuantities((prevQuantities) =>
@@ -52,12 +54,13 @@ const CartContainer = () => {
     );
   };
 
+  const handleProceed = () => {
+    router.push("/billing-info");
+  };
+
   return (
     <div>
-      <h1 className="text-primary-black lg:text-4xl text-2xl font-bold">
-        My Shopping Cart
-      </h1>
-      <MovementElement duration={0.5}>
+      <MovementElement duration={0.3}>
         <div className="mt-8 grid grid-cols-1 xl:grid-cols-3 xl:gap-x-7 gap-y-5 items-center justify-center">
           <div className="col-span-2 shadow-md py-5 rounded-md border">
             <Table
@@ -141,7 +144,7 @@ const CartContainer = () => {
           </div>
 
           {/* cart statistics */}
-          <Card className="shadow-md hover:border hover:border-primary-color/50">
+          <Card className="shadow-md hover:border hover:border-primary-color/50 duration-300">
             <CardHeader>
               <CardTitle className="font-semibold text-xl">
                 Cart Total
@@ -166,11 +169,12 @@ const CartContainer = () => {
               </div>
             </CardContent>
             <CardFooter>
-              <Link href={"/checkout"} className="w-full">
-                <Button className="bg-primary-color w-full rounded-full hover:bg-primary-black/80">
-                  Proceed to checkout
-                </Button>
-              </Link>
+              <Button
+                onClick={handleProceed}
+                className="bg-primary-color w-full rounded-full hover:bg-primary-black/80"
+              >
+                Proceed to checkout
+              </Button>
             </CardFooter>
           </Card>
         </div>

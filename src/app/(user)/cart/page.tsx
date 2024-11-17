@@ -10,6 +10,9 @@ export const metadata: Metadata = {
 const CartPage = () => {
   return (
     <Container className="page-padding ">
+      <h1 className="text-primary-black lg:text-4xl text-2xl font-bold">
+        My Shopping Cart
+      </h1>
       <CartContainer></CartContainer>
     </Container>
   );

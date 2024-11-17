@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className} antialiased`}>
-        <nav className="sticky top-0 z-[9999] bg-[#FDFDFD]">
+        <nav className="sticky top-0 z-20 bg-[#FDFDFD]">
           <Navbar></Navbar>
         </nav>
         <div className="min-h-[calc(100vh-121px)] pb-24 bg-[#FDFDFD]">
