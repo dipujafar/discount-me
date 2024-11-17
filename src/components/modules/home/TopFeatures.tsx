@@ -7,7 +7,7 @@ import MovementElement from "@/components/animation/MovementElement";
 
 const TopFeatures = () => {
   return (
-    <MovementElement duration={1} y="-80%">
+    <MovementElement duration={1} y="60%">
       <div
         className="bg-[#fff] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 lg:px-16 px-8 py-8 items-center justify-between  rounded gap-5 XL:gap-x-10 max-w-7xl mx-auto"
         style={{ boxShadow: "2px 4px 4px 2px rgba(0, 0, 0, 0.25)" }}

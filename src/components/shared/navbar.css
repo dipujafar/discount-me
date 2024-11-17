@@ -1,7 +1,7 @@
 /* From Uiverse.io by neerajbaniwal */
 .btn-shine:hover {
-  background: linear-gradient(to right, #89bb9d 0, #00b047 20%, #ff7d29 20%);
-
+  background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%);
+  background-position: 0;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 3s infinite linear;

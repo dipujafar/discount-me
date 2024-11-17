@@ -127,7 +127,7 @@ const Navbar = () => {
 
           {/* nav icons */}
           <div className="hidden items-center gap-3 xl:flex">
-            <Link href={"/shopping-cart"} className="relative">
+            <Link href={"/cart"} className="relative">
               <PulseShadow color="#e68c50">
                 <span className="absolute -right-1 -top-2 flex size-5 items-center justify-center rounded-full bg-primary-color p-1 text-white">
                   {5}
@@ -234,7 +234,7 @@ const Navbar = () => {
 
                   {/* nav icons */}
                   <div className="mt-5 flex items-center justify-center gap-3">
-                    <Link href={"/shopping-cart"} className="relative">
+                    <Link href={"/cart"} className="relative">
                       <span className="absolute -right-1 -top-2 flex size-5 items-center justify-center rounded-full bg-primary-color p-1 text-white">
                         5
                       </span>

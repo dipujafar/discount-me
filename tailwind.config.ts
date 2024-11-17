@@ -55,6 +55,7 @@ export default {
         "primary-black": "#232323",
         "primary-white": "#FDFDFD",
         "light-gray": "#9A9CAA",
+        "primary-gray": "#F2F2F2",
       },
       borderRadius: {
         lg: "var(--radius)",

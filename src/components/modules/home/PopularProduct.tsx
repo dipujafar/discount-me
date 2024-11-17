@@ -11,8 +11,8 @@ const PopularProduct = () => {
       <div>
         <div className="mt-7 grid grid-cols-2 gap-x-2 gap-y-5 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
           {trendingProducts?.map((product) => (
-            <div className="group relative space-y-1" key={product?.name}>
-              <Link href={`#`}>
+            <Link href={`#`} key={product?._id}>
+              <div className="group relative space-y-1 hover:bg-gray-200 rounded-xl duration-200 ease-in">
                 <Image
                   src={product?.image}
                   alt="product_image"
@@ -20,18 +20,17 @@ const PopularProduct = () => {
                   height={1000}
                   className="md:h-[256px] h-[200px] sm:h-[180px] w-full rounded-xl "
                 ></Image>
-              </Link>
-              <Link href={`#`}>
-                <div>
+
+                <div className="px-2">
                   <h1 className="font-medium text-primary-black  ">
                     {product?.name}
                   </h1>
-                  <p className="font-medium  text-primary-gray  text-light-gray ">
+                  <p className="font-medium   text-light-gray ">
                     ${product?.price}
                   </p>
                 </div>
-              </Link>
-            </div>
+              </div>
+            </Link>
           ))}
         </div>
       </div>
