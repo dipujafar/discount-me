@@ -9,7 +9,7 @@ const couponData = {
 
 const CouponContainer = () => {
   return (
-    <Container className="page-padding md:space-y-10 space-y-5">
+    <Container className="lg:mt-16 mt-8 md:space-y-10 space-y-5">
       {Array.from({ length: 3 }).map((_, i) => (
         <CouponCard data={couponData}></CouponCard>
       ))}

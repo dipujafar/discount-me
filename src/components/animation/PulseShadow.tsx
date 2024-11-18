@@ -1,17 +1,26 @@
 "use client";
 
+import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import React, { ReactNode } from "react";
 
 interface PulseShadowProps {
   children: ReactNode;
   color?: string;
+  className?: string;
 }
 
-const PulseShadow: React.FC<PulseShadowProps> = ({ children, color }) => {
+const PulseShadow: React.FC<PulseShadowProps> = ({
+  children,
+  color,
+  className,
+}) => {
   return (
     <motion.div
-      className={`flex w-fit h-fit items-center justify-center rounded-2xl bg-[${color}]`}
+      className={cn(
+        `flex w-fit h-fit items-center justify-center rounded-2xl bg-[${color}]`,
+        className
+      )}
       style={{ boxShadow: `0px 0px 5px 2px ${color}` }}
       initial={{ boxShadow: `0px 0px 0px ${color}` }}
       animate={{

@@ -9,8 +9,8 @@ export const metadata = {
 
 const CouponPage = () => {
   return (
-    <Container className="page-padding ">
-      <h1 className="text-primary-black lg:text-4xl text-2xl font-bold">
+    <Container className="page-padding">
+      <h1 className="text-primary-black lg:text-4xl text-2xl font-bold md:w-[85%] xl:w-[80%] mx-auto">
         Coupon Cards
       </h1>
       <CouponContainer></CouponContainer>
