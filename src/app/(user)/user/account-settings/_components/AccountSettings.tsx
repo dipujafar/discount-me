@@ -41,6 +41,7 @@ const AccountSettings = () => {
 
     if (file) {
       const url = URL.createObjectURL(file);
+      console.log(url);
       setImageUrl(url);
       setFileName(file);
     } else {
@@ -120,7 +121,7 @@ const AccountSettings = () => {
               <div className="flex flex-1 flex-col items-center justify-center gap-y-5">
                 <div className="group relative">
                   <Avatar className="size-52">
-                    <AvatarImage src={"/profileImage.png"} />
+                    <AvatarImage src={imageUrl || "/profileImage.png"} />
                     <AvatarFallback className="text-5xl uppercase">
                       <Image
                         src={fallBackImag}

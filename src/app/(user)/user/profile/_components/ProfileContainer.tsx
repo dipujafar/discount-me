@@ -36,7 +36,7 @@ export default function ProfileContainer() {
       <div className="flex flex-col items-stretch gap-x-8 gap-y-8 lg:flex-row">
         <div className="dashboard-card flex flex-col items-center justify-center space-y-4 py-8 text-center lg:w-[60%]">
           <Avatar className="size-36">
-            <AvatarImage src={`${userProfile}`} />
+            <AvatarImage src={"/profileImage.png"} />
             <AvatarFallback className="text-3xl uppercase">
               {userData?.name?.split(" ").length > 1 ? (
                 <p>
