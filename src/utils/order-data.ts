@@ -2,7 +2,7 @@ export const orderData = [
   {
     _id: "1",
     id: "#12345",
-    date: "2023-05-01",
+    date: "4 April, 2021",
     total: 50,
     status: "pending",
     paymentStatus: "pending",

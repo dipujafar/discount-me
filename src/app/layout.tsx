@@ -4,6 +4,7 @@ import { Poppins } from "next/font/google";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import "react-pagination-bar/dist/index.css";
+import { Toaster, toast } from "sonner";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -32,6 +33,10 @@ export default function RootLayout({
         <nav className="sticky top-0 z-20 bg-[#FDFDFD]">
           <Navbar></Navbar>
         </nav>
+
+        {/* sonner toaster */}
+        <Toaster />
+
         <div className="min-h-[calc(100vh-121px)] pb-24 bg-[#FDFDFD]">
           {children}
         </div>

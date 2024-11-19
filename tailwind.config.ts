@@ -58,6 +58,8 @@ export default {
         "primary-gray": "#F2F2F2",
         "primary-light-gray": "#F8FAFC",
         "primary-slate": "#999999",
+        "primary-red": "#EB2926",
+        "primary-pink": "#FDEEE9",
       },
       borderRadius: {
         lg: "var(--radius)",
