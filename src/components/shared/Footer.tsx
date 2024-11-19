@@ -37,15 +37,14 @@ const Footer = () => {
                 <li>
                   <Link href="/user/profile">My Account</Link>
                 </li>
-                <li>
-                  <Link href="/sign-in">Login / Register</Link>
+                <li className="flex gap-x-1">
+                  <Link href="/sign-in">Login</Link>/
+                  <Link href="/sign-up">Register</Link>
                 </li>
                 <li>
-                  <Link href="/shopping-cart">Cart</Link>
+                  <Link href="/cart">Cart</Link>
                 </li>
-                <li>
-                  <Link href="/favorite-products">Wishlist</Link>
-                </li>
+
                 <li>
                   <Link href="/products">Shop</Link>
                 </li>
@@ -58,6 +57,9 @@ const Footer = () => {
                 Quick Links
               </h3>
               <ul className="space-y-2 text-primary-white">
+                <li>
+                  <Link href="/about-us">About Us</Link>
+                </li>
                 <li>
                   <Link href="/privacy-policy">Privacy Policy</Link>
                 </li>

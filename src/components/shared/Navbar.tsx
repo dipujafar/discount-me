@@ -44,7 +44,7 @@ const Navbar = () => {
   return (
     <>
       <Container>
-        <nav className="flex items-center justify-between gap-x-5 py-3 2xl:gap-x-36">
+        <nav className="flex items-center justify-between gap-x-5 py-3 2xl:gap-x-16">
           {/* logo image */}
           <div>
             <Link href={"/"}>
@@ -61,7 +61,7 @@ const Navbar = () => {
           {/* nav link and search bar */}
           <div className="flex flex-1 items-center justify-center gap-10">
             {/* search */}
-            <div className="relative hidden w-2/3 items-center lg:flex xl:w-1/2">
+            <div className="relative hidden w-2/3 items-center lg:flex xl:w-1/2 max-w-md">
               <Input
                 type="text"
                 placeholder={"Search...."}
@@ -85,7 +85,7 @@ const Navbar = () => {
                 <li>
                   <Menubar className="w-fit border-none bg-transparent shadow-none">
                     <MenubarMenu>
-                      <MenubarTrigger className="truncate text-light-black duration-500 btn-shine hover:text-white">
+                      <MenubarTrigger className="truncate text-light-black duration-500 btn-shine hover:text-white hover:p-0  cursor-pointer">
                         All Items
                         <ChevronDown className="ml-3" size={20} />
                       </MenubarTrigger>
