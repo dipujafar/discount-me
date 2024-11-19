@@ -184,7 +184,7 @@ const Navbar = () => {
                     </Button>
                   </div>
 
-                  {/* Navlinks */}
+                  {/* NavLinks */}
                   <nav>
                     <ul className="mx-auto mt-5 flex flex-col items-center gap-y-4 text-light-black">
                       <li>
