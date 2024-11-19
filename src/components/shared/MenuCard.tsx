@@ -1,11 +1,12 @@
 import Image from "next/image";
 import { Card, CardContent } from "../ui/card";
 import { TMenu } from "@/types";
+import { ShoppingCart } from "lucide-react";
 
 const MenuCard = ({ data }: { data: TMenu }) => {
   return (
     <Card className="max-w-[320px] md:max-w-[400px]  lg:max-w-[450px] hover:shadow-2xl rounded-xl duration-100 ease-in">
-      <CardContent className="px-0">
+      <CardContent className="px-0 relative">
         <Image
           src={data?.image}
           alt="menu_image"
@@ -22,6 +23,12 @@ const MenuCard = ({ data }: { data: TMenu }) => {
             </p>
           </div>
           <p className="font-semibold text-xl">${data?.price}</p>
+        </div>
+        <div className="absolute top-2 right-2 bg-primary-color hover:bg-primary-black/50 rounded-full p-3 cursor-pointer group duration-300 ease-in z-10">
+          <ShoppingCart
+            className="text-white group-hover:scale-110 duration-300 ease-in"
+            size={22}
+          />
         </div>
       </CardContent>
     </Card>

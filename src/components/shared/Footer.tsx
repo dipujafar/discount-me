@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <div className="bg-primary-black py-16">
       <Container>
-        <div className="flex flex-col flex-wrap xl:justify-between justify-center gap-y-20g gap-x-2 md:flex-row">
+        <div className="flex flex-col flex-wrap xl:justify-between justify-center gap-y-10 gap-x-2 md:flex-row">
           {/* Logo and description */}
           <div className="">
             <Image
