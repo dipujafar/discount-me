@@ -41,7 +41,7 @@
 }
 .embla-thumbs__container {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: start;
   align-items: center;
 }

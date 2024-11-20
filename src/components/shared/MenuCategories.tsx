@@ -9,7 +9,7 @@ import { TCategory } from "@/types";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 
-const MenuCategories = ({ data }: { data: TCategory[] }) => {
+const MenuCategories = ({ data }: { data: any[] }) => {
   return (
     <Carousel
       opts={{

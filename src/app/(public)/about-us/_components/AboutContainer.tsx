@@ -7,10 +7,10 @@ const AboutUsContainer = () => {
       <p className="text-primary-slate max-w-7xl">
         Welcome to [Your Company Name]. Before using our logo design service,
         please carefully review the following Terms and Conditions, as they
-        govern the contractual relationship between you (the "Client") and [Your
-        Company Name] (the "Service Provider"). By using our logo design
-        service, you acknowledge that you have read, understood, and agreed to
-        these Terms and Conditions in their entirety.
+        govern the contractual relationship between you (the Client) and [Your
+        Company Name] (the Service Provider). By using our logo design service,
+        you acknowledge that you have read, understood, and agreed to these
+        Terms and Conditions in their entirety.
       </p>
 
       <h1 className="xl:text-6xl md:text-3xl text-xl font-bold md:mb-10 mb-5">

@@ -31,7 +31,7 @@ const MenuDetails = ({ menuData }: { menuData: TMenuItems }) => {
 
   return (
     <div>
-      <div className="flex flex-col md:items-center gap-7 lg:flex-row">
+      <div className="flex flex-col lg:items-center gap-7 lg:flex-row">
         {/* products images */}
         <div className="flex-1">
           <MenuDetailsCarousel slides={menuData?.images} options={OPTIONS} />

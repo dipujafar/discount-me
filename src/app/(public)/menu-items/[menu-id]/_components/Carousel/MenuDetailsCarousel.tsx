@@ -43,7 +43,7 @@ const MenuDetailsCarousel: React.FC<PropType> = (props) => {
   }, [emblaMainApi, onSelect]);
 
   return (
-    <div className="embla xl::gap-x-10 flex flex-row-reverse gap-x-3">
+    <div className="embla  flex flex-col md:flex-row-reverse gap-x-3 gap-y-2">
       <div className="embla__viewport" ref={emblaMainRef}>
         <div className="embla__container">
           {slides?.slice(0, 6)?.map((data, index) => (
@@ -54,7 +54,7 @@ const MenuDetailsCarousel: React.FC<PropType> = (props) => {
                 height={500}
                 alt="product_image"
                 quality={100}
-                className="mx-auto h-[250px] w-auto md:h-[450px] lg:h-[350px] xl:h-[450px]"
+                className="mx-auto h-[250px] w-auto md:h-[350px]  xl:h-[450px]"
               ></Image>
             </div>
           ))}
@@ -63,7 +63,7 @@ const MenuDetailsCarousel: React.FC<PropType> = (props) => {
 
       <div className="embla-thumbs">
         <div className="embla-thumbs__viewport" ref={emblaThumbsRef}>
-          <div className="embla-thumbs__container flex flex-col gap-y-4">
+          <div className="embla-thumbs__container flex  md:flex-col md:gap-y-2 gap-x-2">
             {slides?.slice(0, 6)?.map((data, index) => (
               <CarouselThumbs
                 key={index}
