@@ -16,33 +16,40 @@ const CustomerExperience = () => {
         Sed dictum ipsum elementum diam dapibus, ut sodales orci monte
         consectetur. Fusce a mollis lorem. Orci varius natoque penatibus.
       </p>
-      <div className="flex flex-grow justify-between">
-        <div className="space-y-3">
+      <div className="flex flex-grow flex-wrap items-center justify-between gap-5">
+        <div className="space-y-3 ">
           <PulseShadow color="#6bbe8c">
             <Image src={icon1} alt="icon"></Image>
           </PulseShadow>
-          <p className="font-medium text-primary-black">Original Products</p>
+          <p className="font-medium text-primary-black max-w-[100px] md:max-w-max ">
+            Original Products
+          </p>
         </div>
 
-        <div className="space-y-3">
+        <div className="space-y-3 ">
           <PulseShadow color="#6bbe8c">
             <Image src={icon2} alt="icon"></Image>
           </PulseShadow>
-          <p className="font-medium text-primary-black">
+          <p className="font-medium text-primary-black max-w-[100px] md:max-w-max ">
             Satisfaction Guarantee
           </p>
         </div>
-        <div className="space-y-3">
+        <div className="space-y-3 ">
           <PulseShadow color="#6bbe8c">
             <Image src={icon3} alt="icon"></Image>
           </PulseShadow>
-          <p className="font-medium text-primary-black">New Arrival Everyday</p>
+          <p className="font-medium text-primary-black max-w-[100px] md:max-w-max ">
+            New Arrival Everyday
+          </p>
         </div>
-        <div className="space-y-3">
+        <div className="space-y-3 ">
           <PulseShadow color="#6bbe8c">
             <Image src={icon4} alt="icon"></Image>
           </PulseShadow>
-          <p className="font-medium text-primary-black"> Fast Shipping</p>
+          <p className="font-medium text-primary-black max-w-[100px] md:max-w-max ">
+            {" "}
+            Fast Shipping
+          </p>
         </div>
       </div>
     </div>

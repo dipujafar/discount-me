@@ -57,11 +57,11 @@ importers:
         specifier: 1.0.0
         version: 1.0.0(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@19.0.0-rc-66855b96-20241106(react@19.0.0-rc-66855b96-20241106))(react@19.0.0-rc-66855b96-20241106)
       embla-carousel:
-        specifier: ^8.4.0
-        version: 8.4.0
+        specifier: 8.3.1
+        version: 8.3.1
       embla-carousel-autoplay:
-        specifier: ^8.3.1
-        version: 8.3.1(embla-carousel@8.4.0)
+        specifier: ^8.4.0
+        version: 8.4.0(embla-carousel@8.3.1)
       embla-carousel-react:
         specifier: ^8.3.1
         version: 8.3.1(react@19.0.0-rc-66855b96-20241106)
@@ -1337,10 +1337,10 @@ packages:
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
-  embla-carousel-autoplay@8.3.1:
-    resolution: {integrity: sha512-L8THF1AJJSQtlNa1wZ6lEKh/CiZssE3TsVFtabQNsS+pc1O1O/YTIYCC3khdQAztGMOBf3WfVDIY/4AIfQj3JQ==}
+  embla-carousel-autoplay@8.4.0:
+    resolution: {integrity: sha512-AJHXrnaY+Tf4tb/+oItmJSpz4P0WvS62GrW5Z4iFY3zsH0mkKcijzd04LIkj0P4DkTazIBEuXple+nUVmuMsrQ==}
     peerDependencies:
-      embla-carousel: 8.3.1
+      embla-carousel: 8.4.0
 
   embla-carousel-react@8.3.1:
     resolution: {integrity: sha512-gBY0zM+2ASvKFwRpTIOn2SLifFqOKKap9R/y0iCpJWS3bc8OHVEn2gAThGYl2uq0N+hu9aBiswffL++OYZOmDQ==}
@@ -1354,9 +1354,6 @@ packages:
 
   embla-carousel@8.3.1:
     resolution: {integrity: sha512-DutFjtEO586XptDn4cwvBJwsR/8fMa4jUk5Jk2g+/elKgu8mdn0Z2sx33g4JskvbLc1/6P8Xg4QlfELGJFcP5A==}
-
-  embla-carousel@8.4.0:
-    resolution: {integrity: sha512-sUzm4DGGsdZCom7LEO38Uu6C7oQoFfPorKDf/f7j2EeRCMhHSOt3CvF+pHCaI6N+x5Y8/tfLueJ0WZlgUREnew==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -3735,9 +3732,9 @@ snapshots:
 
   eastasianwidth@0.2.0: {}
 
-  embla-carousel-autoplay@8.3.1(embla-carousel@8.4.0):
+  embla-carousel-autoplay@8.4.0(embla-carousel@8.3.1):
     dependencies:
-      embla-carousel: 8.4.0
+      embla-carousel: 8.3.1
 
   embla-carousel-react@8.3.1(react@19.0.0-rc-66855b96-20241106):
     dependencies:
@@ -3750,8 +3747,6 @@ snapshots:
       embla-carousel: 8.3.1
 
   embla-carousel@8.3.1: {}
-
-  embla-carousel@8.4.0: {}
 
   emoji-regex@8.0.0: {}
 

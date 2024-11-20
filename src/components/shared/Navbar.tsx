@@ -37,6 +37,11 @@ import Container from "../ui/container";
 import Link from "next/link";
 import "./navbar.css";
 import PulseShadow from "../animation/PulseShadow";
+import { motion } from "framer-motion";
+import {
+  childrenVariants,
+  parentVariants,
+} from "../animation/FramerMotionVariant";
 
 const categoriesData = ["Dessert", "Noodles", "Rice"];
 
@@ -73,7 +78,7 @@ const Navbar = () => {
               />
               <Button
                 type="submit"
-                className="absolute right-0 rounded-l-none rounded-r-full bg-primary-color hover:bg-primary-black/80"
+                className="absolute right-0 rounded-l-none rounded-r-full bg-primary-green hover:bg-primary-black/80"
               >
                 Search
               </Button>
@@ -85,27 +90,42 @@ const Navbar = () => {
                 <li>
                   <Menubar className="w-fit border-none bg-transparent shadow-none">
                     <MenubarMenu>
-                      <MenubarTrigger className="truncate text-light-black duration-500 btn-shine hover:text-white hover:p-0  cursor-pointer">
+                      <MenubarTrigger className="truncate text-light-black duration-500 btn-shine hover:text-white hover:p-0  cursor-pointer ">
                         All Items
                         <ChevronDown className="ml-3" size={20} />
                       </MenubarTrigger>
                       <MenubarContent>
-                        <Link href={`/menu-items`}>
-                          <MenubarItem className="max-w-[180px]">
-                            All Items
-                          </MenubarItem>
-                        </Link>
-                        <hr />
-                        {categoriesData?.map((category, idx: number) => (
-                          <div key={idx}>
-                            <Link href={`/menu-items`}>
-                              <MenubarItem className="max-w-[180px]">
-                                {category}
-                              </MenubarItem>
-                            </Link>
-                            <hr />
-                          </div>
-                        ))}
+                        <motion.div
+                          initial={{ y: "-10%", opacity: 0 }}
+                          animate={{ y: 0, opacity: 1 }}
+                          exit={{ y: "-10%", opacity: 0 }}
+                        >
+                          <motion.ul
+                            variants={parentVariants}
+                            initial="initial"
+                            animate="animate"
+                            exit="exit"
+                          >
+                            <motion.li variants={childrenVariants}>
+                              <Link href={`/menu-items`}>
+                                <MenubarItem className="max-w-[180px]">
+                                  All Items
+                                </MenubarItem>
+                              </Link>
+                              <hr />
+                            </motion.li>
+                            {categoriesData?.map((category, idx: number) => (
+                              <motion.li variants={childrenVariants} key={idx}>
+                                <Link href={`/menu-items`}>
+                                  <MenubarItem className="max-w-[180px]">
+                                    {category}
+                                  </MenubarItem>
+                                </Link>
+                                <hr />
+                              </motion.li>
+                            ))}
+                          </motion.ul>
+                        </motion.div>
                       </MenubarContent>
                     </MenubarMenu>
                   </Menubar>
@@ -178,7 +198,7 @@ const Navbar = () => {
 
                     <Button
                       type="submit"
-                      className="absolute right-0 top-0 rounded-l-none rounded-r-full bg-primary-color"
+                      className="absolute right-0 top-0 rounded-l-none rounded-r-full bg-primary-green"
                     >
                       Search{" "}
                     </Button>
@@ -201,9 +221,7 @@ const Navbar = () => {
                           <DropdownMenuContent className="mx-auto w-56">
                             <DropdownMenuGroup>
                               <Link href={`/menu-items`}>
-                                <DropdownMenuItem>
-                                  Categories Items
-                                </DropdownMenuItem>
+                                <DropdownMenuItem>All Items</DropdownMenuItem>
                               </Link>
 
                               <hr />

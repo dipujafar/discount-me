@@ -11,8 +11,8 @@ const PopularProduct = () => {
       <div>
         <div className="mt-7 grid grid-cols-2 gap-x-2 gap-y-5 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
           {trendingProducts?.map((product) => (
-            <Link href={`#`} key={product?._id}>
-              <div className="group relative space-y-1 hover:bg-gray-200 rounded-xl duration-200 ease-in">
+            <Link href={`/menu-items/${product?._id}`} key={product?._id}>
+              <div className="group relative space-y-1 hover:bg-gray-200 hover:shadow-md rounded-xl duration-200 ease-in">
                 <Image
                   src={product?.image}
                   alt="product_image"

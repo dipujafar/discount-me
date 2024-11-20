@@ -33,7 +33,7 @@ const MenuCategories = ({ data }: { data: TCategory[] }) => {
             className="basis-1/4 md:basis-1/6 xl:basis-1/12 py-2"
           >
             <div
-              className="flex-center flex-col cursor-pointer bg-[#FDFDFD] rounded-xl hover:shadow-2xl hover:bg-gray-200 duration-300 ease-in"
+              className="flex-center flex-col cursor-pointer  rounded-xl hover:shadow-2xl hover:bg-gray-200 duration-300 ease-in bg-[#e3f1ea]"
               style={{
                 boxShadow: "0px 3.553px 14.214px 0px rgba(0, 0, 0, 0.08)",
               }}
