@@ -12,7 +12,6 @@ import { userData } from "@/utils/user-data";
 import { PhoneInput } from "@/components/ui/phone-number-input";
 import Image from "next/image";
 import fallBackImag from "@/assets/image/user-profile/nonUser.png";
-import profileImage from "@/assets/image/user-profile/profileImage.png";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 // Define form input type
