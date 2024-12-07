@@ -131,7 +131,7 @@ const CartContainer = () => {
             </Table>
             <hr />
             <div className="flex flex-wrap gap-2 md:justify-between items-center justify-center px-4 mt-5">
-              <Link href="/products">
+              <Link href="/menu-items">
                 <Button className="bg-primary-gray text-primary-black hover:text-primary-white hover:bg-gray-500 ease-in duration-300 group overflow-hidden">
                   <ArrowLeft className="group-hover:-translate-x-10 ease-in duration-500"></ArrowLeft>
                   Return to shop

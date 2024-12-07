@@ -33,6 +33,7 @@ const SignUpForm = () => {
     register,
     handleSubmit,
     formState: { errors },
+    watch,
   } = useForm<FormData>();
 
   const onSubmit = async (data: FormData) => {
@@ -134,6 +135,11 @@ const SignUpForm = () => {
                     type={showConfirmPassword ? "text" : "password"}
                     {...register("confirmPassword", {
                       required: "Confirm Password is required",
+                      validate: (value) => {
+                        if (value !== watch("password")) {
+                          return "Passwords do not match";
+                        }
+                      },
                     })}
                   />
 
