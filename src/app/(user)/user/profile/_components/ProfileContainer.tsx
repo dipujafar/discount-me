@@ -13,7 +13,6 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { cn } from "@/lib/utils";
-import userProfile from "@/assets/image/user-profile/profileImage.png";
 import Link from "next/link";
 import { userData } from "@/utils/user-data";
 import { orderData } from "@/utils/order-data";

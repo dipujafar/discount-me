@@ -64,8 +64,7 @@ const CartContainer = () => {
         <div className="mt-8 grid grid-cols-1 xl:grid-cols-3 xl:gap-x-7 gap-y-5 items-center justify-center">
           <div className="col-span-2 shadow-md py-5 rounded-md border">
             <Table
-              className="lg:text-lg w-full overflow-x-auto
-        "
+              className="lg:text-lg w-full overflow-x-auto"
             >
               <TableHeader>
                 <TableRow>
